@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="www.utool.pro">
+  <meta name="Keywords" content="ip,ip查询,手机ip,本机ip,公网ip,外网ip,ip地址查询,{{.Ip}}">
+  <meta name="Description" content="专业公网 IP 地址查询、地理位置查询、IP 数据库">
+  <title>{{.Ip}} - IP 查询</title>
+  <link rel="canonical" href="http://ip.utool.pro/">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      padding: 15px;
+      margin: auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0;
+      border-radius: .25rem;
+    }
+
+    .content {
+      min-height: calc(100% - 56px - 56px);
+    }
+
+    .flex-shrink-0 {
+      -ms-flex-negative: 0 !important;
+      flex-shrink: 0 !important;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    .pb-3,
+    .py-3 {
+      padding-bottom: 1rem !important;
+    }
+
+    .pt-3,
+    .py-3 {
+      padding-top: 1rem !important;
+    }
+
+    .result {
+      max-width: 460px;
+      margin: 16px auto;
+    }
+
+    .result p {
+      color: #32220e;
+    }
+  </style>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a1b4285bcc23e640909cb6d6eff483d5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>IP查询</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main" class="content flex-shrink-0">
+    <form class="card p-2" action="/" method="get">
+      <div class="input-group">
+        <input name="ip" type="text" class="form-control" placeholder="输入要查询的IP地址">
+        <div class="input-group-append">
+          <button id="submit" class="btn btn-primary">查询</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="alert alert-warning result" role="alert">
+      <p>您的IP地址: <span>{{.Ip}}</span> </p>
+      <p>所在地区: <span>{{.Country}} {{.Province}}</span></p>
+      <p>运营商: <span>{{.ISP}}<span></span>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Copyright © 2020 <a rel="nofollow" target="_blank"
+          href="http://www.beian.miit.gov.cn">粤ICP备19087729号 .</a></span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.4.1.slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
