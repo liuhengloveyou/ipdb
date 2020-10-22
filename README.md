@@ -27,6 +27,7 @@ Usage of ./ipdb:
 ## API
 
 1. You can take no arguments, and get the IP information of your current machine
+
 ```
 ~:curl http://ip.fuzu.pro
 ```
@@ -34,19 +35,20 @@ Usage of ./ipdb:
 The response is JSON, like this:
 ```
 {
-"code": 0,
-"data": {
-"ip": "223.73.123.17",
-"country": "中国",
-"province": "广东",
-"isp": "移动",
-"latitude": 23.12911,
-"longitude": 113.264385
-}
+  "code": 0,
+  "data": {
+    "ip": "223.73.123.17",
+    "country": "中国",
+    "province": "广东",
+    "isp": "移动",
+    "latitude": 23.12911,
+    "longitude": 113.264385
+  }
 }
 ```
 
 2. You can also query the specified IP address:
+
 ```
 curl 'http://ip.fuzu.pro?ip=1.1.1.1'
 ```
