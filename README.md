@@ -53,4 +53,4 @@ The response is JSON, like this:
 curl 'http://ip.fuzu.pro?ip=1.1.1.1'
 ```
 
-3. Or, Here is a very simple Web page: [http://ip.fuzu.pro](http://ip.fuzu.pro/)
+3. Or, Here is a very simple Web page: [http://ip.utool.pro](http://ip.utool.pro/)
